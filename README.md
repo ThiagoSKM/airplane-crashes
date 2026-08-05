@@ -11,9 +11,24 @@
 ![Workflow](https://github.com/ThiagoSKM/airplane-crashes/blob/main/assets/workflow-img.png)
 
 ## Technology Stack
+- DAX
+- Fabric Data Factory (Pipelines, Dataflows Gen2, and Copy Jobs)
+- OneLake
+- Power BI semantic models & reports
+- Power Query
+- SQL
+- Synapse Data Warehouse
 
-## Fabric Artifacts
+## Core Developments
+**Dataflows Gen2**:
+
+**Data Pipelines**:
+
+**Data Warehouse**:
+
+**Semantic Model**:
 
 ## Power BI Report
 
 ## Key Insights
+- From 1908 to 2009, there has been an overall increase in airplane crashes. This increase has recorded several fluctuations along its evolution, with the period from the 70s to the 90s recording the highest numbers and the 00s presenting a relatively sharp decline.
