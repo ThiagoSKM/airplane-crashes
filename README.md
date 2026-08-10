@@ -1,4 +1,4 @@
-# Airplane Crashes
+# Airplane Crashes (1908-2009)
 
 ## Project Overview
 **Objectives**: The aim of this project was to implement an end-to-end analytics solution using Microsoft Fabric to ingest, transform, model, and visualize aircraft crashes data. The solution features various Microsoft Fabric artifacts, such as Lakehouses, Data Warehouses, Dataflows, Pipelines, and Semantic Models, as well as a Power BI report.
@@ -20,7 +20,10 @@
 - Synapse Data Warehouse
 
 ## Core Developments
-**Dataflows Gen2**:
+**Dataflows Gen2**: Dataflows Gen2 were a fundamental element in the ETL process, enabling the manipulation and transformation of source data and serving as the foundation for the data cleaning, preparing and modeling stages. Key changes implemented through the dataflows include:
+- Addressing missing values in variables through a case-to-case analysis and data imputation methods.
+- Fixing inconsistencies in the source data, which mainly consisted of formatting & semantic discrepancies, misspellings, and extra characters that were likely inserted by mistake.
+- Designing the Fact and Dimension tables for the dimensional model through the definition of business and surrogate keys, selection of relevant columns for each table, and creation of new, insightful columns based on the information available in existing columns (e.g. creation of a "aircraft_manufacturer" column based on the information present in the "aircraft_model" column, possible through parsing techniques and additional research to ensure accurate correspondence).
 
 **Data Pipelines**:
 
