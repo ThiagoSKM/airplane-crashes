@@ -20,12 +20,18 @@
 - Synapse Data Warehouse
 
 ## Core Developments
-**Dataflows Gen2**: Dataflows Gen2 were a fundamental element in the ETL process, enabling the manipulation and transformation of source data and serving as the foundation for the data cleaning, preparing and modeling stages. Key changes implemented through the dataflows include:
+**Dataflows Gen2** were a fundamental element in the ETL process, enabling the manipulation and transformation of source data and serving as the foundation for the data cleaning, preparing and modeling stages. Key changes implemented through the dataflows include:
 - Addressing missing values in variables through a case-to-case analysis and data imputation methods.
 - Fixing inconsistencies in the source data, which mainly consisted of formatting & semantic discrepancies, misspellings, and extra characters that were likely inserted by mistake.
 - Designing the Fact and Dimension tables for the dimensional model through the definition of business and surrogate keys, selection of relevant columns for each table, and creation of new, insightful columns based on the information available in existing columns (e.g. creation of a "aircraft_manufacturer" column based on the information present in the "aircraft_model" column, possible through parsing techniques and additional research to ensure accurate correspondence).
 
-**Data Pipelines**:
+**Data Pipelines** allowed for data orchestration and workflow automation within the Fabric environment. Within the project, they served the purpose of:
+- Moving data in between environments.
+- Performing data quality checks on the model tables and storing the results.
+- Storing lookup test results in a lookup table.
+- Notify updates regarding the pipeline execution status via email.
+- Streamlining the workflow through the creation of a single, unified pipeline.
+![Unified Pipeline](https://github.com/ThiagoSKM/airplane-crashes/blob/main/assets/pl_unified.png)
 
 **Data Warehouse**:
 
